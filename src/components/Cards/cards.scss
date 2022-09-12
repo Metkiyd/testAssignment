@@ -1,0 +1,75 @@
+.cards {
+    width: 155px;
+    height: 150px;
+    cursor: pointer;
+    padding: 20px 0;
+    display: block;
+  }
+  
+  .card__1 {
+    background: linear-gradient(to top left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
+    margin-bottom: 20px;
+    float: left;
+  }
+  
+  .card__1:hover {
+    background: linear-gradient(to top left, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%, rgba(110, 110, 110, 0) 100%);
+    border-bottom: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-image: linear-gradient(to top left, rgba(212, 212, 212, 0.4) 10%, rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+    border-image-slice: 1;
+  }
+  
+  
+  .card__2 {
+    background: linear-gradient(to top right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
+    margin-bottom: 20px;
+    float: right;
+  
+  }
+  
+  .card__2:hover {
+    background: linear-gradient(to top right, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%, rgba(110, 110, 110, 0) 100%);
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-image: linear-gradient(to top right, rgba(212, 212, 212, 0.4) 10%, rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+    border-image-slice: 1;
+  }
+  
+  .card__3 {
+    background: linear-gradient(to bottom left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
+
+    float: left;
+  
+  }
+  
+  .card__3:hover {
+    background: linear-gradient(to bottom left, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%, rgba(110, 110, 110, 0) 100%);
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-image: linear-gradient(to bottom left, rgba(212, 212, 212, 0.4) 10%, rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+    border-image-slice: 1;
+  }
+  
+  .card__4 {
+    background: linear-gradient(to bottom right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
+    float: right;
+  
+  }
+  
+  .card__4:hover {
+    background: linear-gradient(to bottom right, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%, rgba(110, 110, 110, 0) 100%);
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-image: linear-gradient(to bottom right, rgba(212, 212, 212, 0.4) 10%, rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+    border-image-slice: 1;
+  }
+  
+  .card__big-font {
+    font-size: 60px;
+    font-weight: 700;
+  }
+  
+  .card__small-font {
+    font-size: 20px;
+  }

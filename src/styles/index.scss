@@ -1,0 +1,15 @@
+@import './fonts.scss';
+
+body {
+   background-color: black;
+   margin: 0;
+}
+
+#root {
+    background-repeat: no-repeat;
+    background-image:  url('../assets/image/bg.png');
+    background-size: cover;
+    background-position: center;
+    font-family: MuseoSansCyrl;
+}
+    

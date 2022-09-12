@@ -1,15 +1,209 @@
 .App {
-  text-align: center;
+  position: relative;
+  background-image: url(img/bg.png);
+  background-position: center 0;
+  background-repeat: no-repeat;
+}
+.wrapper{
+  max-width: 1173px;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  height: 100px;
+  background-color: rgba(0,0,0,0.3);
   color: white;
 }
 
+.header__logo {
+  height: 34px;
+  width: 274px;
+  border: .1px solid;
+  position: relative;
+  z-index: 1;
+  padding: 0 10px;
+}
+
+.nav__items {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 680px;
+  list-style: none;
+}
+
+.nav__link {
+  height: 25px;
+  font-family: MuseoSansCyrl, sans-serif;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.nav__link:hover {
+  color: #b1b1b1;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.promo {
+  margin-top: 116px;
+  max-width: 426px;
+  font-family: MuseoSansCyrl, sans-serif;
+  line-height: 1.2;
+  background: linear-gradient(to right, #ffffff, #ff4106);
+  background-clip: text;
+  color: transparent;
+  clip-path: polygon(0 0, 100% 0, 100% 14%, 96% 43%, 94% 64%, 90% 100%, 0 100%);
+
+}
+
+.promo__big-font {
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.2;
+} 
+
+.promo__small-font {
+  font-size: 25px;
+  font-weight: 300;
+}
+
+.promo__button {
+  margin-top: 87px;
+  display: flex;
+
+  justify-content: flex-start;
+
+}
+
+.promo button {
+  width: 180px;
+  height: 35px;
+  font-size: 10px;
+  font-weight: 100;
+  font-family: MuseoSansCyrl, sans-serif;
+  color: #ffffff;
+  background-color: transparent;
+  outline: none;
+  border: 1px blue solid;
+  padding: 11px 24px;
+  cursor: pointer;
+  position: relative;
+  border-image: linear-gradient(10deg, rgba(102, 153, 204, 1) 20%, rgba(102, 153, 204, 0.0) 40%, rgba(102, 153, 204, 0.0) 40%, rgba(102, 153, 204, 1) 100%);
+  border-image-slice: 1;
+
+  --b: 2px;
+  /* thickness of the border */
+  --c: rgb(255, 255, 255);
+  /* color of the border */
+  --w: 5px;
+  /* width of border */
+  --g: #0000 90deg, var(--c) 0;
+  background:
+      conic-gradient(from 180deg at top var(--b) right var(--b), var(--g)) 100% 0,
+      conic-gradient(from 0deg at bottom var(--b) left var(--b), var(--g)) 0 100%;
+  background-size: var(--w) var(--w);
+  background-origin: border-box;
+  background-repeat: no-repeat;
+
+}
+
+.line {
+  display: inline-block;
+  width: 406px;
+  height: 58px;
+  background-image: url(img/line.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cards {
+  margin-top: 77px;
+  width: 320px;
+  height: 320px;
+  font-family: MuseoSansCyrl, sans-serif;
+  font-size: 16px;
+  background-image: linear-gradient(to right, #fcfcfc, #a3a3a3);
+  background-clip: text;
+  color: transparent;
+  text-shadow: 0px 0px;
+}
+
+.cards {
+  width: 155px;
+  height: 150px;
+  cursor: pointer;
+  padding: 20px 0;
+  display: block;
+}
+
+.card__1 {
+  background: linear-gradient(to top left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
+  margin-bottom: 20px;
+  float: left;
+}
+
+.card__1:hover {
+  background: linear-gradient(to top left, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%, rgba(110, 110, 110, 0) 100%);
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(to top left, rgba(212, 212, 212, 0.4) 10%, rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+  border-image-slice: 1;
+}
+
+
+.card__2 {
+  background: linear-gradient(to top right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
+  margin-bottom: 20px;
+  float: right;
+
+}
+
+.card__2:hover {
+  background: linear-gradient(to top right, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%, rgba(110, 110, 110, 0) 100%);
+  border-bottom: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-image: linear-gradient(to top right, rgba(212, 212, 212, 0.4) 10%, rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+  border-image-slice: 1;
+}
+
+.card__3 {
+  background: linear-gradient(to bottom left, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
+
+  float: left;
+
+}
+
+.card__3:hover {
+  background: linear-gradient(to bottom left, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%, rgba(110, 110, 110, 0) 100%);
+  border-top: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-image: linear-gradient(to bottom left, rgba(212, 212, 212, 0.4) 10%, rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+  border-image-slice: 1;
+}
+
+.card__4 {
+  background: linear-gradient(to bottom right, rgba(110, 110, 110, 0.1) 10%, rgba(110, 110, 110, 0.05) 30%, rgba(110, 110, 110, 0) 100%);
+  float: right;
+
+}
+
+.card__4:hover {
+  background: linear-gradient(to bottom right, rgba(110, 110, 110, 0.3) 20%, rgba(110, 110, 110, 0.1) 50%, rgba(110, 110, 110, 0) 100%);
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-image: linear-gradient(to bottom right, rgba(212, 212, 212, 0.4) 10%, rgba(212, 212, 212, 0.1) 20%, rgba(212, 212, 212, 0));
+  border-image-slice: 1;
+}
+
+.card__big-font {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.card__small-font {
+  font-size: 20px;
+}
