@@ -6,12 +6,13 @@
 .main {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
-    @media (max-width: 767px) {
+    @media (max-width: 802px) {
         flex-flow: column wrap;
+        align-items: center;
     }
 
     &__description {
@@ -19,7 +20,7 @@
             margin-bottom: 8%;
             &__top {
                 text-transform: uppercase;
-                background: linear-gradient(to right, #d1d1d1 18%, #ff450c 100%);
+                background: linear-gradient(to right, #ffffff 18%, #ff450c 100%);
                 font-size: 58px;
                 font-weight: 700;
                 line-height: 55px;
@@ -30,10 +31,11 @@
             &__bottom {
                 font-size: 24px;
                 font-weight: 300;
-                background: linear-gradient(to right, #d1d1d1 18%, #ff3d02 55%);
+                background: linear-gradient(to right, #ffffff 18%, #ff3d02 55%);
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
-                margin: 0px;
+                margin-top: 0px;
+                margin-bottom: 135px;
             }
         }
 
@@ -142,7 +144,7 @@
             }
 
             &__small {
-                font-size: 16px;
+                font-size: 18px;
                 margin: 0;
 
                 &:first-child {
@@ -155,7 +157,7 @@
                 font-size: 58px;
                 font-weight: 700;
                 > span {
-                    font-size: 15px;
+                    font-size: 22px;
                 }
             }
             

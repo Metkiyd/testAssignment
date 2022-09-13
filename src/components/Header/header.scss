@@ -61,17 +61,20 @@
     &__navigation {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        width: 65%;
-        @media (max-width: 767px) {
+        width: 62%;
+        @media (max-width: 802px) {
             flex-flow: column wrap;
         }
 
         &--name { 
             color: #c1c0c1;
-            font-size: 14px;
+            font-size: 16px;
             font-weight: 300;
+            @media (max-width: 802px) {
+                font-size: 13px;
+            }
 
             &:hover {
                 color: #868686;
