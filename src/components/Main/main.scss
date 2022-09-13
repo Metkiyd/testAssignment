@@ -10,6 +10,9 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    @media (max-width: 767px) {
+        flex-flow: column wrap;
+    }
 
     &__description {
         &--title {
@@ -86,9 +89,6 @@
             &:hover {
                 &::before, &::after{
                     box-shadow: 0px 0px 10px 1px #ffffff;
-            
-                    
-
                 }
             }
         }
@@ -114,17 +114,31 @@
 
             &:first-child {
                 background: linear-gradient(to right bottom, transparent 50%, rgba(255, 255, 255, 0.07));
+               
+                &:hover {
+                    background: linear-gradient(to right bottom, transparent 50%, rgba(255, 255, 255, 0.2));
+                }
             }
             
             &:nth-child(2) {
                 background: linear-gradient(to left bottom, transparent 50%, rgba(255, 255, 255, 0.07));
+                &:hover {
+                    background: linear-gradient(to left bottom, transparent 50%, rgba(255, 255, 255, 0.2));
+                }
             }
 
             &:nth-child(3) {
-                background: linear-gradient(to right top, transparent 50%, rgba(255, 255, 255, 0.07));            }
+                background: linear-gradient(to right top, transparent 50%, rgba(255, 255, 255, 0.07)); 
+                &:hover {
+                    background: linear-gradient(to right top, transparent 50%, rgba(255, 255, 255, 0.2));
+                }          
+            }
 
             &:nth-child(4) {
                 background: linear-gradient(to left top, transparent 50%, rgba(255, 255, 255, 0.07));
+                &:hover {
+                    background: linear-gradient(to left top, transparent 50%, rgba(255, 255, 255, 0.2));
+                }
             }
 
             &__small {

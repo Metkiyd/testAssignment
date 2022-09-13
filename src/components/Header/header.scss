@@ -5,6 +5,7 @@
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 2;
 }
+
 .header-menu {
     display: flex;
     flex-direction: row;
@@ -63,17 +64,25 @@
         justify-content: space-between;
         align-items: center;
         width: 65%;
+        @media (max-width: 767px) {
+            flex-flow: column wrap;
+        }
 
         &--name { 
             color: #c1c0c1;
             font-size: 14px;
             font-weight: 300;
+
             &:hover {
                 color: #868686;
-                text-decoration: underline;
                 cursor: pointer;
+                box-shadow: 0px 1px #646464,
+                  inset 0 -1px #000;
+                display: inline;
                 transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+
             }
+
 
         }
     }
