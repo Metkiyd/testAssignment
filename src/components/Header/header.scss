@@ -17,6 +17,11 @@
     margin-left: auto;
     height: 100px;
 
+    @media (max-width: 899px) {
+        flex-direction: column;
+        height: 350px;
+    }
+
     &__logo {
         display: flex;
         align-items: center;
@@ -54,8 +59,16 @@
             transition: width 0.6s;
         }
 
+        @media (max-width: 899px) {
+            border: none;
+            &::before, &::after {
+                content: none;
+            }
+        }
+
         &--image {
             z-index: 3;
+            transform: translate(10%, 0);
         }
     }
     &__navigation {
@@ -64,22 +77,21 @@
         justify-content: space-around;
         align-items: center;
         width: 62%;
-        @media (max-width: 802px) {
-            flex-flow: column wrap;
+
+        @media (max-width: 899px) {
+            flex-direction: column;
+            height: 270px;
         }
 
         &--name { 
             color: #c1c0c1;
             font-size: 16px;
             font-weight: 300;
-            @media (max-width: 802px) {
-                font-size: 13px;
-            }
 
             &:hover {
                 color: #868686;
                 cursor: pointer;
-                box-shadow: 0px 1px #646464,
+                box-shadow: 0 1px #646464,
                   inset 0 -1px #000;
                 display: inline;
                 transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);

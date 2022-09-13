@@ -34,7 +34,7 @@
                 background: linear-gradient(to right, #ffffff 18%, #ff3d02 55%);
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
-                margin-top: 0px;
+                margin-top: 0;
                 margin-bottom: 135px;
             }
         }
@@ -57,6 +57,10 @@
             border: none;
             position: relative;
 
+            @media (max-width: 899px) {
+                transform: translate(63%, -25px);
+            }
+
             &__title {
                 background-color: #14151d;
                 color: #909296;
@@ -67,8 +71,8 @@
             &::before {
                 position: absolute;
                 content: "";
-                bottom: 0px;
-                left: 0px;
+                bottom: 0;
+                left: 0;
                 border: solid #ffffff;
                 border-width: 0 0 2px 2px;
                 display: inline-block;
@@ -79,8 +83,8 @@
             &::after {
                 position: absolute;
                 content: "";
-                top: 0px;
-                right: 0px;
+                top: 0;
+                right: 0;
                 border: solid #ffffff;
                 border-width: 2px 2px 0 0;
                 display: inline-block;
@@ -90,7 +94,7 @@
 
             &:hover {
                 &::before, &::after{
-                    box-shadow: 0px 0px 10px 1px #ffffff;
+                    box-shadow: 0 0 10px 1px #ffffff;
                 }
             }
         }
@@ -103,6 +107,7 @@
         gap: 15px;
 
         &--card {
+            position: relative;
             width: 163px;
             height: 163px;
             display: flex;
@@ -114,32 +119,62 @@
             cursor: pointer;
             user-select: none;
 
+            &::after {
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                content: '';
+                position: absolute;
+                opacity: 0;
+                height: 163px;
+            }
+
+            &:hover {
+                &::after {
+                    width: 163px;
+                    opacity: 1;
+                    transition: opacity 0.5s ease-in-out;
+                }
+            }
+
             &:first-child {
                 background: linear-gradient(to right bottom, transparent 50%, rgba(255, 255, 255, 0.07));
-               
+
                 &:hover {
-                    background: linear-gradient(to right bottom, transparent 50%, rgba(255, 255, 255, 0.2));
+                    &::after {
+                        background: linear-gradient(to right bottom, transparent 50%, rgba(255, 255, 255, 0.2));
+                    }
                 }
             }
             
             &:nth-child(2) {
                 background: linear-gradient(to left bottom, transparent 50%, rgba(255, 255, 255, 0.07));
+
                 &:hover {
-                    background: linear-gradient(to left bottom, transparent 50%, rgba(255, 255, 255, 0.2));
+                    &::after {
+                        background: linear-gradient(to left bottom, transparent 50%, rgba(255, 255, 255, 0.2));
+                    }
                 }
             }
 
             &:nth-child(3) {
-                background: linear-gradient(to right top, transparent 50%, rgba(255, 255, 255, 0.07)); 
+                background: linear-gradient(to right top, transparent 50%, rgba(255, 255, 255, 0.07));
+
                 &:hover {
-                    background: linear-gradient(to right top, transparent 50%, rgba(255, 255, 255, 0.2));
-                }          
+                    &::after {
+                        background: linear-gradient(to right top, transparent 50%, rgba(255, 255, 255, 0.2));
+                    }
+                }
             }
 
             &:nth-child(4) {
                 background: linear-gradient(to left top, transparent 50%, rgba(255, 255, 255, 0.07));
+
                 &:hover {
-                    background: linear-gradient(to left top, transparent 50%, rgba(255, 255, 255, 0.2));
+                    &::after {
+                        background: linear-gradient(to left top, transparent 50%, rgba(255, 255, 255, 0.2));
+                    }
                 }
             }
 
