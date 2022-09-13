@@ -16,8 +16,9 @@
             margin-bottom: 8%;
             &__top {
                 text-transform: uppercase;
-                background: linear-gradient(to right, #d1d1d1 18%, #ff3d02 55%);
+                background: linear-gradient(to right, #d1d1d1 18%, #ff450c 100%);
                 font-size: 58px;
+                font-weight: 700;
                 line-height: 55px;
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -25,6 +26,7 @@
             }
             &__bottom {
                 font-size: 24px;
+                font-weight: 300;
                 background: linear-gradient(to right, #d1d1d1 18%, #ff3d02 55%);
                 background-clip: text;
                 -webkit-text-fill-color: transparent;
@@ -45,28 +47,27 @@
             }
         }
         &--button {
-            background: linear-gradient(to right bottom, #09213d, #3969a6, #3969a6, #09213d);
-            padding:  2px;
+            background: linear-gradient(to right bottom, #0f1f2d, #3364a3, #3364a3, #0f1f2d);
+            padding:  1px;
             border: none;
             position: relative;
-            cursor: pointer;
 
             &__title {
-                background-color: #090c0e;
-                color: #d1d1d1;
+                background-color: #14151d;
+                color: #909296;
                 padding: 10px 30px;
                 margin: 0;
-
+                cursor: pointer;
             }
             &::before {
                 position: absolute;
                 content: "";
                 bottom: 0px;
                 left: 0px;
-                border: solid #d1d1d1;
-                border-width: 0 0 3px 3px;
+                border: solid #ffffff;
+                border-width: 0 0 2px 2px;
                 display: inline-block;
-                padding: 3px;
+                padding: 2px;
                 transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
             }
 
@@ -75,11 +76,20 @@
                 content: "";
                 top: 0px;
                 right: 0px;
-                border: solid #d1d1d1;
-                border-width: 3px 3px 0 0;
+                border: solid #ffffff;
+                border-width: 2px 2px 0 0;
                 display: inline-block;
-                padding: 3px;
+                padding: 2px;
                 transition: all 0.4s cubic-bezier(0.1, 0.82, 0.76, 0.96);
+            }
+
+            &:hover {
+                &::before, &::after{
+                    box-shadow: 0px 0px 10px 1px #ffffff;
+            
+                    
+
+                }
             }
         }
     }
@@ -101,8 +111,6 @@
             box-sizing: border-box;
             cursor: pointer;
             user-select: none;
-            // background-color: rgba(255, 255, 255, 0.15);
-            // background-color: transparent;
 
             &:first-child {
                 background: linear-gradient(to right bottom, transparent 50%, rgba(255, 255, 255, 0.07));

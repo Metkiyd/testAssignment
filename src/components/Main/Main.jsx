@@ -1,5 +1,4 @@
 import React from 'react'
-import line from '../../assets/image/line.png'
 import './main.scss'
 
 function Main() {
