@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/testAssignment/static/css/main.9f389d36.css",
+    "main.js": "/testAssignment/static/js/main.2add50fc.js",
+    "static/media/bg.png": "/testAssignment/static/media/bg.874cdfef1945dd6c1a4e.png",
+    "static/media/MuseoSansCyrl-700.woff": "/testAssignment/static/media/MuseoSansCyrl-700.0d5cb4ec8ac2a9f30484.woff",
+    "static/media/MuseoSansCyrl-300.woff": "/testAssignment/static/media/MuseoSansCyrl-300.397ed770be641d6e6bf1.woff",
+    "static/media/MuseoSansCyrl-100.woff": "/testAssignment/static/media/MuseoSansCyrl-100.efad55315c7c40093e36.woff",
+    "static/media/MuseoSansCyrl-700.woff2": "/testAssignment/static/media/MuseoSansCyrl-700.f4d6724b614afa06e34c.woff2",
+    "static/media/MuseoSansCyrl-300.woff2": "/testAssignment/static/media/MuseoSansCyrl-300.22ff0e87a632e27a5dc9.woff2",
+    "static/media/MuseoSansCyrl-100.woff2": "/testAssignment/static/media/MuseoSansCyrl-100.9d42db5879a951daa477.woff2",
+    "index.html": "/testAssignment/index.html",
+    "main.9f389d36.css.map": "/testAssignment/static/css/main.9f389d36.css.map",
+    "main.2add50fc.js.map": "/testAssignment/static/js/main.2add50fc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f389d36.css",
+    "static/js/main.2add50fc.js"
+  ]
+}
